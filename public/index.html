@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Avalon-server</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <!-- <link rel="import" href="pages/register.html"> -->
+    <link rel="stylesheet" href="css/index.css">
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="scripts/controller.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+</head>
+
+<body>
+    <!-- <div id="main" w3-include-html="pages/register.html"></div> -->
+
+    <div id="master">
+        <div class="title">
+            <button class="options" onclick="result()">Result</button>
+            <button class="options" onclick="reset()">Reset</button>
+        </div>
+    </div>
+    <div id="players">
+        <div id="vote">
+            <div class="title">
+                <H2>
+                    Take your vote
+                </H2>
+            </div>
+            <div class="buttons">
+                <button class="approve" onclick="approve()">Approve</button>
+                <button class="reject" onclick="reject()">Reject</button>
+            </div>
+
+            <div class="title">
+                <div id="answer"></div>
+                <div id="bannerMsg"></div>
+                <div id="people"></div>
+            </div>
+        </div>
+
+        <div id="register">
+            <form class="title" action="http://192.168.1.205:3000/starter/register" method="post">
+                <label for="uname">Register your name</label>
+                <input type="text" id="uname" name="uname"><br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        <img id="banner" src="assets/banned.jpeg" width="500" height="300">
+    </div>
+    <script>
+        isRegistered()
+        isBanned()
+        isMaster()
+    </script>
+</body>
+
+</html>

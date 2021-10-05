@@ -1,0 +1,72 @@
+.title {
+    margin: auto;
+    width: 70%;
+    border: 3px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+.buttons {
+    margin: auto;
+    width: 70%;
+    border: 3px solid black;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.approve {
+    margin: 10px;
+    color: black;
+    font-size: 15px;
+    background-color: green;
+}
+
+.reject {
+    margin: 10px;
+    color: black;
+    font-size: 15px;
+    background-color: red;
+}
+
+#answer {
+    margin: auto;
+    width: 70%;
+    border: 3px solid black;
+    padding: 10px;
+    text-align: center;
+    visibility: hidden;
+}
+
+#bannerMsg {
+    margin: auto;
+    width: 70%;
+    border: 3px solid black;
+    padding: 10px;
+    text-align: center;
+    visibility: hidden;
+}
+
+#players {
+    visibility: hidden;
+}
+
+#vote {
+    visibility: hidden;
+}
+
+#register {
+    visibility: hidden;
+}
+
+#master {
+    visibility: hidden;
+}
+
+#banner {
+    visibility: hidden;
+}
+
+#people {
+    visibility: hidden;
+}
